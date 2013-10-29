@@ -1,0 +1,82 @@
+.aes-headerbar{
+    height:15px;
+    margin-bottom:15px;
+    background: #d3a907; /* Old browsers */
+    background: -moz-linear-gradient(left,  #d3a907 0%, #d3a907 25%, #df771c 25%, #df771c 50%, #748d20 50%, #748d20 75%, #295a80 75%, #295a80 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d3a907), color-stop(25%,#d3a907), color-stop(25%,#df771c), color-stop(50%,#df771c), color-stop(50%,#748d20), color-stop(75%,#748d20), color-stop(75%,#295a80), color-stop(100%,#295a80)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+        left,
+        #d3a907 0%,
+        #d3a907 0%,
+        #df771c 25%,
+        #df771c 50%,
+        #748d20 50%,
+        #748d20 75%,
+        #295a80 75%,
+        #295a80 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #d3a907 0%,#d3a907 25%,#df771c 25%,#df771c 50%,#748d20 50%,#748d20 75%,#295a80 75%,#295a80 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #d3a907 0%,#d3a907 25%,#df771c 25%,#df771c 50%,#748d20 50%,#748d20 75%,#295a80 75%,#295a80 100%); /* IE10+ */
+    background: linear-gradient(
+        to right,
+        #d3a907 0%,
+        #d3a907 20%,
+        #df771c 20%,
+        #df771c 40%,
+        #748d20 40%,
+        #748d20 60%,
+        #295a80 60%,
+        #295a80 80%,
+        #d3a907 80%,
+        #d3a907 100%
+    ); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3a907', endColorstr='#295a80',GradientType=1 ); /* IE6-9 */
+
+    
+}
+@media screen and (min-width: 768px) {
+    .aes-headerbar{
+        background: linear-gradient(
+            to right,
+            #d3a907 0%,
+            #d3a907 20%,
+            #df771c 20%,
+            #df771c 40%,
+            #748d20 40%,
+            #748d20 60%,
+            #295a80 60%,
+            #295a80 80%,
+            #d3a907 80%,
+            #d3a907 100%
+        );
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .aes-headerbar{
+        background: linear-gradient(
+            to right,
+            #d3a907 0%,
+            #d3a907 10%,
+            #df771c 10%,
+            #df771c 20%,
+            #748d20 20%,
+            #748d20 30%,
+            #295a80 30%,
+            #295a80 40%,
+            #d3a907 40%,
+            #d3a907 50%,
+            #df771c 50%,
+            #df771c 60%,
+            #748d20 60%,
+            #748d20 70%,
+            #295a80 70%,
+            #295a80 80%,
+            #d3a907 80%,
+            #d3a907 90%,
+            #df771c 90%,
+            #df771c 100%
+        );
+    }
+}
+

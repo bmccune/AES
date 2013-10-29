@@ -1,0 +1,211 @@
+a{
+    color:#df771c;
+}
+.nav a:hover .caret {
+border-top-color: #df771c;
+border-bottom-color: #df771c;
+}
+.nav .caret {
+border-top-color: #df771c;
+border-bottom-color: #df771c;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+background-color: #df771c;
+border-color: #FFF;
+}
+.nav .open>a, .navbar-nav>li:hover>a{
+    color:#FFF;
+}
+img.aes-logo{
+    max-width:100%;
+    
+}
+.aes-logo{
+    margin-top:30px;
+}
+.navbar-nav > li{
+    padding:10px;
+}
+.navbar-nav>li:hover {
+    background-color:#df771c;
+    color: #FFF;
+    cursor: pointer;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color:#df771c;
+}
+.aes-logo img{
+    display: block;
+    margin:25px auto;    
+}
+
+.aes-tagline{
+    font-size:1em;
+    margin-top:5px;
+    margin-bottom:10px;
+    color:#295a80;
+    
+}
+.aes-address{
+    font-size:0.9em;
+    margin-bottom:10px;
+    color:#646566;
+}
+
+.aes-download{
+    text-align:center;
+    color:#646566;
+    font-weight:bold;
+    font-size:1.2em;
+
+}
+//Right Widget
+.aes-header-utility{
+    margin-bottom:20px;
+    .aes-phone-section{
+        text-align:right;
+        
+        .aes-hours{
+            font-size:1em;
+            color:#646566;
+            text-transform:uppercase;
+        }
+        .aes-phone{
+            font-size:1.5em;
+            color:#df771c;
+        }
+    }
+    .aes-directions-section{
+        text-align:right;
+        margin-top:20px;
+        span{
+            color:#a9acac;
+        }
+        input{
+            border:none;
+            background-color:#FFF;
+            color:#646566;
+            min-width:40px;
+    
+        }
+        input.aes-input{
+            border:1px solid #d2d3d3;
+            padding:0 5px;
+            margin-right:5px;
+            min-width:160px;
+        }
+    }
+    .aes-search-section{
+        text-align:right;
+        margin-top:20px;
+        span{
+            color:#a9acac;
+        }
+        input{
+            border:none;
+            background-color:#FFF;
+            color:#646566;
+            min-width:40px;
+        }
+        input.aes-input{
+            border:1px solid #d2d3d3;
+            padding:0 5px;
+            margin-right:5px;
+            min-width:160px;
+        }
+    }
+}
+//Navigation
+.navbar-nav{
+    float:right;
+}
+.navbar-nav > li > a {padding:0px;}
+@media screen and (min-width: 768px){
+    .carousel-caption.caption-1{  
+        right: 65%;
+        left: 12%;
+        font-size: 0.9em;
+        text-align: left;
+        font-weight: 200;
+        height: 60%;
+        top: 10%;
+        background-color: #738c1f;
+        padding-bottom: 0px;
+        bottom: 0;
+        padding: 0 10px;
+    }
+    .carousel-caption.caption-2{  
+        right: 60%;
+        left: 20%;
+        height: 100%;
+        background-color: #ea7004;
+        padding-bottom: 0px;
+        bottom: 0;
+        padding: 0 10px;
+    }
+    .carousel-control.left,.carousel-control.right{
+        background-image: none;
+    }
+    .carousel-control .icon-prev{
+        background-color:#8b9b25;
+        width: 60px;
+        height: 50px;
+        margin-top: -15px;
+        margin-left: -95px;
+        padding-left: 6px;
+        font-size: 30px;
+    }
+    .carousel-control .icon-next{
+        background-color:#8b9b25;
+        width: 60px;
+        height: 50px;
+        margin-top: -15px;
+        margin-left: 10px;
+        padding-left: 6px;
+        font-size: 30px;
+        left:63%;
+    }
+}
+.bg-ltbrown{
+    background-color:#eae3ce;
+    
+}
+.aes-service-block{
+    min-height: 250px;
+    margin: 1em;
+    background-color: #FFF;
+}
+.aes-service-block h2{
+    font-size: 1em;
+    text-align:center;
+}
+button{
+    text-align:center;
+    margin:0 auto;
+    display:block;
+    border-radius:10px;
+    border:1px solid #000;
+    padding:2px 16px;
+    background:#FFF;
+}
+.aes-service-block p{
+    padding:10px;
+}
+
+.aes-service-block img{
+    width: 100%;
+}
+.icon img{
+    height:auto;
+    width:20%;
+    margin:0 auto;
+    display:block;
+}
+
+
+@media screen and (max-width: 480) {
+    .carousel-caption{
+        position:relative;
+    }
+}

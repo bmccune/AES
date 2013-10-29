@@ -1,0 +1,66 @@
+.aes-headerbar{
+    height:15px;
+    margin-bottom:15px;
+    background-color: #295a80; // Old browsers
+    @include background-image(linear-gradient(
+        left,
+        #d3a907 0%,
+        #d3a907 20%,
+        #df771c 20%,
+        #df771c 40%,
+        #748d20 40%,
+        #748d20 60%,
+        #295a80 60%,
+        #295a80 80%,
+        #d3a907 80%,
+        #d3a907 100%
+    ));
+}
+
+@media screen and (min-width: 768px) {
+    .aes-headerbar{
+        background-color: #295a80; // Old browsers
+        @include background-image(linear-gradient(
+            left,
+            #d3a907 0%,
+            #d3a907 20%,
+            #df771c 20%,
+            #df771c 40%,
+            #748d20 40%,
+            #748d20 60%,
+            #295a80 60%,
+            #295a80 80%,
+            #d3a907 80%,
+            #d3a907 100%
+        ));
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .aes-headerbar{
+        background-color: #295a80; // Old browsers
+        @include background-image(linear-gradient(
+            left,
+            #d3a907 0%,
+            #d3a907 10%,
+            #df771c 10%,
+            #df771c 20%,
+            #748d20 20%,
+            #748d20 30%,
+            #295a80 30%,
+            #295a80 40%,
+            #d3a907 40%,
+            #d3a907 50%,
+            #df771c 50%,
+            #df771c 60%,
+            #748d20 60%,
+            #748d20 70%,
+            #295a80 70%,
+            #295a80 80%,
+            #d3a907 80%,
+            #d3a907 90%,
+            #df771c 90%,
+            #df771c 100%
+        ));
+    }
+}

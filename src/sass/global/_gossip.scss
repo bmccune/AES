@@ -1,0 +1,47 @@
+.aes-gossip, .aes-social, .aes-email{
+    h3{
+        color:#df771c;
+            }
+    p{
+        color:#646566;
+        span{
+            color:#646566;
+            font-weight: bold;
+        }
+    }
+}
+.aes-gossip{
+    span.aes-icon{
+        margin-left:5px;
+        img{
+            height:40px;
+        }
+    }
+}
+.aes-social{
+    ul{
+        padding:0px;
+        li{
+            list-style: none;
+            margin-bottom:15px;
+        }
+    }
+    span.aes-icon{
+        margin-left:5px;
+        img{
+            height:40px;
+        }
+    }
+    
+}
+.aes-email{
+    span.aes-icon{
+        margin-left:5px;
+        img{
+            height:40px;
+        }
+    }
+    .aes-email-pic{
+        height:100px;
+    }
+}
