@@ -1,9 +1,9 @@
 a{
     color:#df771c;
 }
-.nav a:hover .caret {
-border-top-color: #df771c;
-border-bottom-color: #df771c;
+.nav a:hover .caret, .nav .open .caret, .navbar-nav > li:hover .caret{
+border-top-color: #FFF;
+border-bottom-color: #FFF;
 }
 .nav .caret {
 border-top-color: #df771c;
@@ -30,6 +30,10 @@ img.aes-logo{
     background-color:#df771c;
     color: #FFF;
     cursor: pointer;
+}
+.navbar-nav>li.open {
+    background-color:#df771c;
+    color: #FFF;
 }
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
@@ -171,39 +175,12 @@ img.aes-logo{
     background-color:#eae3ce;
     
 }
-.aes-service-block{
-    min-height: 250px;
-    margin: 1em;
-    background-color: #FFF;
+.aes-app img{
+    height:35px;
 }
-.aes-service-block h2{
-    font-size: 1em;
-    text-align:center;
+.carousel {
+      border-top:2px solid #df771c;
 }
-button{
-    text-align:center;
-    margin:0 auto;
-    display:block;
-    border-radius:10px;
-    border:1px solid #000;
-    padding:2px 16px;
-    background:#FFF;
-}
-.aes-service-block p{
-    padding:10px;
-}
-
-.aes-service-block img{
-    width: 100%;
-}
-.icon img{
-    height:auto;
-    width:20%;
-    margin:0 auto;
-    display:block;
-}
-
-
 @media screen and (max-width: 480) {
     .carousel-caption{
         position:relative;

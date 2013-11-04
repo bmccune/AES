@@ -1,0 +1,141 @@
+.aes-service-block{
+    min-height: 250px;
+    margin: 1em;
+    background-color: #FFF;
+    //Nested
+    .icon img{
+        height:auto;
+        width:20%;
+        margin:0 auto;
+        display:block;
+    }
+
+    h2{
+        text-align:center;
+        font-size:1.5em;
+    }
+    img{
+        width: 100%;
+    }
+    p{
+        padding:15px 0px;
+        color:$greytxt;
+    }
+    button{
+        text-align:center;
+        margin:0 auto;
+        display:block;
+        border-radius:10px;
+        border:1px solid #000;
+        padding:2px 5px 2px 16px;
+        background:#FFF;
+            a{
+                top:-7px;
+                margin-right:8px;
+                display:inline-block;
+                position:relative;
+            }
+        span.iconPaw{
+            width:25px;
+            height:25px;
+            display:inline-block;
+            margin-top:3px;
+            background-image:url('../img/paw_sprite2.png');
+        }
+    }
+    &.surgery{
+        h2{
+            color: $green;
+        }
+        button{
+            color:$green;
+            border:2px solid $green;
+            a{
+                color:$green;
+            }
+        }
+    }
+    &.emergency{
+         h2{
+            color: $blue;
+        }
+        button{
+            color:$blue;
+            border:2px solid $blue;
+            a{
+                color:$blue;
+            }
+             span.iconPaw.blue{
+                background-position:-25px 0;
+                width:26px;
+            }
+        }
+    }
+    &.therapy{
+        h2{
+            color: $yellow;
+        }
+         button{
+            color:$yellow;
+            border:2px solid $yellow;
+            a{
+                color:$yellow;
+            }
+             span.iconPaw.yellow{
+                background-position:-51px 0;
+                width:26px;
+            }
+        }
+    }
+}
+
+.aes-events{
+    h3{
+        color:$orange;
+    }
+    ul{
+        padding:0px;
+        li{
+            list-style:none;
+            color:$greytxt;
+            letter-spacing:0.5px;
+            h4{
+                margin:0px;
+                padding:0px;
+                font-size:1em;
+                font-weight:800;
+            }
+        }
+    }
+}
+.aes-diff{
+    h3{
+        color:$orange;
+    }
+    p{
+        color:$greytxt;
+    }
+    ul{
+        color:$greytxt;
+    }
+    
+}
+img.cathanger{
+    position: absolute;
+    width: 25%;
+    bottom: -65px;
+    margin-left: 400px;
+}
+
+
+.aes-email{
+    label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        position: relative;
+        margin-top: -15px;
+        font-weight: 300;
+        color:$greytxt;
+    }
+}
