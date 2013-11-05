@@ -13,7 +13,24 @@ module.exports = function(grunt) {
       }
     },
     clean: {
-        build: ["build/css/"],
+        build: ["build"],
+        dist: ["dist"]
+    },
+    includes: {
+        files: {
+            src: [
+                'src/html/index.html',
+                'src/html/who_we_are.html'
+
+            ], // Source files
+            dest: 'build/html', // Destination directory
+            flatten: true,
+            cwd: '.',
+            options: {
+              silent: true,
+              banner: '<!-- I am a banner <% includes.files.dest %> -->'
+            }
+        }
     },
     compass: {                  // Task
         dist: {                   // Target
@@ -33,10 +50,11 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, src: ['src/css/*'], dest: 'build/css/', flatten: true, filter: 'isFile'},
-          {expand: true, src: ['src/img/*'], dest: 'build/img/', flatten: true, filter: 'isFile'},
-          {expand: true, src: ['src/js/*'], dest: 'build/js/', flatten: true, filter: 'isFile'}
-
+          {expand: true, src: ['src/css/*'], dest: 'dist/css/', flatten: true, filter: 'isFile'},
+          {expand: true, src: ['build/css/*'], dest: 'dist/css/', flatten: true, filter: 'isFile'},
+          {expand: true, src: ['src/img/*'], dest: 'dist/img/', flatten: true, filter: 'isFile'},
+          {expand: true, src: ['src/js/*'], dest: 'dist/js/', flatten: true, filter: 'isFile'},
+          {expand: true, src: ['build/html/*'], dest: 'dist/', flatten: true, filter: 'isFile'}
         ]
       }
     },
@@ -57,9 +75,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-preprocess');
+  grunt.loadNpmTasks('grunt-includes');
+
   
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify', 'compass', 'copy']);
+  grunt.registerTask('default', ['clean', 'uglify', 'includes', 'compass', 'copy']);
 
 };

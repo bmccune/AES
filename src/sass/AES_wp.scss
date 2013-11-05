@@ -20,3 +20,37 @@
 @import "global/footer";
 @import "global/gossip";
 @import "global/blocks";
+
+
+.aes-subpages{
+    h1, h2{
+        color:$orange;
+        font-size:2em;
+    }
+    nav{
+        ul{
+            padding:0px;
+            margin:0px;
+            li{
+                list-style:none;
+                margin-bottom:10px;
+                a{
+                    color:$greytxt;
+                    &.active{
+                        color:$orange;
+                        text-decoration:underline;
+                    }
+                    &:hover{
+                        color:$orange;
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 720) {
+    .hide-sm{
+        display:none;
+    }
+}
