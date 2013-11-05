@@ -22,6 +22,10 @@
 @import "global/blocks";
 
 
+
+.navbar-toggle .icon-bar{
+    background-color:$orange;
+}
 .aes-subpages{
     h1, h2{
         color:$orange;
@@ -49,7 +53,7 @@
         }
     }
 }
-@media screen and (max-width: 720) {
+@media (min-width: 768px) {
     .hide-sm{
         display:none;
     }
